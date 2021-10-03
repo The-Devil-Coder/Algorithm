@@ -1,7 +1,7 @@
 def partition(input_numbers, left, right):
     pivot = input_numbers[right]
     i = left - 1
-    for j in range(left, right + 1):
+    for j in range(left, right):
         if input_numbers[j] < pivot:
             i += 1
             input_numbers[i], input_numbers[j] = input_numbers[j], input_numbers[i]
